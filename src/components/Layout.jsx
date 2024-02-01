@@ -4,10 +4,10 @@ import { styled } from "styled-components";
 const LayOutBox = styled.div`
   width: 390px;
   height: 100vh;
-  height: 844px;
+  height: 100dvh; /* Mobile */
   overflow: auto;
   position: relative;
-  background-color: grey;
+  background-color: white;
 
   margin: 0 auto;
   &::-webkit-scrollbar {
