@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Board from "../components/Board";
 
 const Game = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -7,7 +8,15 @@ const Game = () => {
     setIsLoading(false);
   }, 3000);
 
-  return isLoading ? <div>로딩중...</div> : <div>게임화면</div>;
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+
+  return (
+    <div>
+      <Board></Board>
+    </div>
+  );
 };
 
 export default Game;
