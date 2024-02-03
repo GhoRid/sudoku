@@ -6,6 +6,7 @@ import { ThemeProvider } from "styled-components";
 import theme from "./theme";
 import reset from "styled-reset";
 import { createGlobalStyle } from "styled-components";
+import "@fontsource/barlow";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -14,6 +15,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     background-color: #e9ebee;
     box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
   }
 `;
 

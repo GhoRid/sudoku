@@ -10,7 +10,6 @@ const Square = () => {
   const randomList = Array.from({ length: 9 }, () =>
     Math.floor(Math.random() * 9)
   );
-  console.log(randomList);
 
   return (
     <SquareWrapper>
