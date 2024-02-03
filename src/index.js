@@ -13,6 +13,7 @@ const GlobalStyle = createGlobalStyle`
   ${reset}
   body {
     background-color: #e9ebee;
+    box-sizing: border-box;
   }
 `;
 

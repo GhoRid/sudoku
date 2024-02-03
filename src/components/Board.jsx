@@ -1,23 +1,27 @@
 import styled from "styled-components";
-import Square from "./Cell";
+import Square from "./Square";
 
 const BoardWrapper = styled.div`
+  width: 360px;
+  height: 360px;
+  background-color: skyblue;
+
   display: grid;
-  grid-template-columns: repeat(3, 100px); // 3개의 열, 각 열은 100px
+  grid-template-columns: repeat(3, 120px);
+  border: 1px solid black;
 `;
 
 const Board = () => {
+  const randomList = Array.from({ length: 9 }, () =>
+    Math.floor(Math.random() * 9)
+  );
+  console.log(randomList);
+
   return (
     <BoardWrapper>
-      <Square />
-      <Square />
-      <Square />
-      <Square />
-      <Square />
-      <Square />
-      <Square />
-      <Square />
-      <Square />
+      {randomList.map((number, index) => {
+        return <Square key={index} number={number} />;
+      })}
     </BoardWrapper>
   );
 };
