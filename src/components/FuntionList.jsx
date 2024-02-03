@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import Text from "./Text";
-import Button from "./Button";
+import Text from "./atoms/Text";
+import Button from "./atoms/Button";
 
 const Funtions = styled.div`
   display: flex;

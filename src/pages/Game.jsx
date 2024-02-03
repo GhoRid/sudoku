@@ -3,8 +3,8 @@ import Board from "../components/Board";
 import { styled } from "styled-components";
 import { useNavigate } from "react-router-dom";
 import FuntionList from "../components/FuntionList";
-import Text from "../components/Text";
-import Button from "../components/Button";
+import Text from "../components/atoms/Text";
+import Button from "../components/atoms/Button";
 import Top from "../components/Top";
 
 const Container = styled.div`
