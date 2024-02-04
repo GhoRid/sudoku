@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Text from "./atoms/Text";
 
 const Box = styled.button`
   width: 40px;
@@ -14,7 +15,7 @@ const Cell = ({ number }) => {
         console.log(number);
       }}
     >
-      {number}
+      <Text $fontSize="20px">{number}</Text>
     </Box>
   );
 };
