@@ -4,8 +4,8 @@ import { styled } from "styled-components";
 import { useNavigate } from "react-router-dom";
 import FuntionList from "../components/FuntionList";
 import Text from "../components/atoms/Text";
-import Button from "../components/atoms/Button";
 import Top from "../components/Top";
+import NumberList from "../components/NumberList";
 
 const Container = styled.div`
   width: 360px;
@@ -59,6 +59,7 @@ const Game = () => {
       </StateBarContiner>
       <Board></Board>
       <FuntionList />
+      <NumberList />
     </Container>
   );
 };

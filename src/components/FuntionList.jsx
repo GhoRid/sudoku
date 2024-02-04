@@ -1,11 +1,10 @@
 import styled from "styled-components";
 import Text from "./atoms/Text";
-import Button from "./atoms/Button";
 
 const Funtions = styled.div`
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
+  margin-top: 50px;
   text-align: center;
 `;
 
@@ -13,7 +12,7 @@ const FuntionList = () => {
   return (
     <Funtions>
       <div>
-        <Button
+        <button
           onClick={() => {
             console.log("되돌리기");
           }}
@@ -53,11 +52,11 @@ const FuntionList = () => {
               </clipPath>
             </defs>
           </svg>
-        </Button>
+        </button>
         <Text fontSize="20px">되돌리기</Text>
       </div>
       <div>
-        <Button>
+        <button>
           <svg
             width="40"
             height="40"
@@ -114,11 +113,11 @@ const FuntionList = () => {
               </clipPath>
             </defs>
           </svg>
-        </Button>
+        </button>
         <Text fontSize="20px">지우기</Text>
       </div>
       <div>
-        <Button>
+        <button>
           <svg
             width="40"
             height="40"
@@ -161,7 +160,7 @@ const FuntionList = () => {
               </clipPath>
             </defs>
           </svg>
-        </Button>
+        </button>
         <Text fontSize="20px">메모</Text>
       </div>
     </Funtions>

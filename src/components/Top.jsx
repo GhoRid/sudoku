@@ -1,5 +1,4 @@
 import { styled } from "styled-components";
-import Button from "./atoms/Button";
 import { useNavigate } from "react-router-dom";
 
 const Container = styled.div`
@@ -18,7 +17,7 @@ const Top = () => {
 
   return (
     <Container>
-      <Button
+      <button
         onClick={() => {
           navigate("/");
         }}
@@ -52,9 +51,9 @@ const Top = () => {
             </clipPath>
           </defs>
         </svg>
-      </Button>
+      </button>
       <MainLogo>Sudoku</MainLogo>
-      <Button>
+      <button>
         <svg
           width="24"
           height="24"
@@ -82,7 +81,7 @@ const Top = () => {
             </clipPath>
           </defs>
         </svg>
-      </Button>
+      </button>
     </Container>
   );
 };

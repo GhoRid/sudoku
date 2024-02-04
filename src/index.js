@@ -17,6 +17,11 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     font-family: 'Barlow Semi Condensed', sans-serif;
   }
+  button {
+    cursor: pointer;
+    background-color: white;
+    border: none;
+  }
 `;
 
 root.render(
