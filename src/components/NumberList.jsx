@@ -3,7 +3,7 @@ import Text from "./atoms/Text";
 
 const Container = styled.div`
   width: 360px;
-  margin-top: 50px;
+  margin-top: 60px;
 `;
 
 const NumberButton = styled.button`

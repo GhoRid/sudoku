@@ -4,14 +4,19 @@ import Text from "./atoms/Text";
 const Funtions = styled.div`
   display: flex;
   justify-content: space-between;
-  margin-top: 50px;
+  margin-top: 30px;
   text-align: center;
+  padding: 0 10px;
+`;
+
+const Box = styled.div`
+  width: 64px;
 `;
 
 const FuntionList = () => {
   return (
     <Funtions>
-      <div>
+      <Box>
         <button
           onClick={() => {
             console.log("되돌리기");
@@ -54,8 +59,8 @@ const FuntionList = () => {
           </svg>
         </button>
         <Text fontSize="20px">되돌리기</Text>
-      </div>
-      <div>
+      </Box>
+      <Box>
         <button>
           <svg
             width="40"
@@ -115,8 +120,8 @@ const FuntionList = () => {
           </svg>
         </button>
         <Text fontSize="20px">지우기</Text>
-      </div>
-      <div>
+      </Box>
+      <Box>
         <button>
           <svg
             width="40"
@@ -162,7 +167,7 @@ const FuntionList = () => {
           </svg>
         </button>
         <Text fontSize="20px">메모</Text>
-      </div>
+      </Box>
     </Funtions>
   );
 };
