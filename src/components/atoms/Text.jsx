@@ -1,7 +1,6 @@
 import { styled } from "styled-components";
 
 const Container = styled.p`
-  margin-top: 4px;
   font-size: ${(props) => props.$fontSize};
 `;
 
