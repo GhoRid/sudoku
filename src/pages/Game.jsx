@@ -6,6 +6,7 @@ import FuntionList from "../components/FuntionList";
 import Text from "../components/atoms/Text";
 import NumberList from "../components/NumberList";
 import PauseModal from "./../components/PauseModal";
+import Loader from "../components/Loader";
 
 const Container = styled.div`
   width: 360px;
@@ -49,7 +50,7 @@ const Game = () => {
   }, 3000);
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return <Loader />;
   }
 
   return (
