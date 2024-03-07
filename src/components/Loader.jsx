@@ -1,4 +1,5 @@
 import styled, { keyframes } from "styled-components";
+import Text from "./atoms/Text";
 
 // Keyframes 정의
 const lolAnimation = keyframes`
@@ -35,7 +36,7 @@ const LoaderInner = styled.div`
   color: #fff;
   padding: 0 100px;
   text-align: center;
-  top: 50%;
+  top: 45%;
   transform: translateY(-50%);
 `;
 
@@ -44,6 +45,7 @@ const Label = styled.label`
   opacity: 0;
   display: inline-block;
   color: black;
+  margin-top: 20px;
 `;
 
 // 애니메이션 적용
@@ -73,6 +75,7 @@ const Loader = () => {
   return (
     <LoaderWrapper className="cs-loader">
       <LoaderInner className="cs-loader-inner">
+        <Text $fontSize="32px">Loading...</Text>
         <AnimatedLabel>●</AnimatedLabel>
         <AnimatedLabel>●</AnimatedLabel>
         <AnimatedLabel>●</AnimatedLabel>
